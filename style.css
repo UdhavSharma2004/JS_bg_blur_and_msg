@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: url("./img/bg.jpg") no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+#initial{
+    position: absolute;
+    top: 530px;
+    left: 121px;
+    padding:30px;
+    color:white;
+    background-color: rgba(0, 0, 0, 0.872);
+    font-size: x-large;
+    font-weight: bolder;
+    border-radius: 10px;
+    box-shadow: 0 0 30px white;
+    transition: 0.5s;
+    z-index: 1;
+}
+#initial:hover{
+    scale: 1.1;
+    background-color: rgba(255, 255, 255, 0.838);
+    color:black;
+    box-shadow: 0 0 50px black;
+    backdrop-filter:calc();
+}
+#mid{
+    display:none;
+    position: absolute;
+    top: 340px;
+    left: 600px;
+    padding:30px;
+    color:white;
+    background-color: rgba(0, 0, 0, 0.872);
+    font-size: x-large;
+    font-weight: bolder;
+    border-radius: 10px;
+    box-shadow: 0 0 30px white;
+    transition: 0.5s;
+    animation-name: animid;
+    animation-duration: 1s;
+    z-index:2;
+    /* background-color: rgba(0,0,0,0.2); */
+}
+#mid:hover{
+    scale: 1.1;
+    background-color: rgba(255, 255, 255, 0.838);
+    color:black;
+    box-shadow: 0 0 50px black;
+}
+#end{
+    display:none;
+    position: absolute;
+    top: 130px;
+    left: 1030px;
+    padding:30px;
+    color:white;
+    background-color: rgba(0, 0, 0, 0.872);
+    font-size: x-large;
+    font-weight: bolder;
+    border-radius: 10px;
+    box-shadow: 0 0 30px white;
+    transition: 0.5s;
+    animation-name: aniend;
+    animation-duration: 1s;
+    z-index:3;
+    /* background-color: rgba(0,0,0,0.2); */
+}
+#end:hover{
+    scale: 1.1;
+    background-color: rgba(255, 255, 255, 0.838);
+    color:black;
+    box-shadow: 0 0 50px black;
+}
+.btn{
+    padding:1%;
+    margin-top: 5%;
+    border-radius: 5px;
+}
+.btn:hover{
+    scale: 1.1;
+    background-color: rgba(0, 0, 0, 0.838);
+    color:white;
+    box-shadow: 0 0 50px black;
+}
+@keyframes animid{
+    from{
+        top:-10px;
+        opacity:0;
+    }
+
+    100%{
+        top: 340px;
+        opacity:1;
+    }
+}
+@keyframes aniend{
+    from{
+        top:-10px;
+        opacity:0;
+    }
+
+    100%{
+        top: 130px;
+        opacity:1;
+    }
+}
